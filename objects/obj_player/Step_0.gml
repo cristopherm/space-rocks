@@ -22,7 +22,7 @@ if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)
 	instance_create_layer(x, y, "Instances", obj_bullet);
 }
 
-if keyboard_check(vk_space)
+if obj_game.has_power_up == true && keyboard_check(vk_space)
 {
 	instance_create_layer(x, y, "Instances", obj_bullet);
 }
